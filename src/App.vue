@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const url =
+  "https://alfred-skyblue.github.io/unocss-docs-cn/presets/attributify";
+</script>
 
 <template>
+  <h1><a :href="url" class="no-underline" text-black>文档地址</a></h1>
   <!-- Phosphor 图标中的基本锚点图标 -->
   <div class="i-ph-anchor-simple-thin" />
   <!-- 来自 Material Design 图标的橙色闹钟 -->

@@ -13,6 +13,9 @@ devDependencies:
   '@iconify/json':
     specifier: ^2.2.201
     version: 2.2.201
+  '@unocss/preset-attributify':
+    specifier: ^0.59.3
+    version: 0.59.3
   '@unocss/preset-uno':
     specifier: ^0.59.3
     version: 0.59.3
