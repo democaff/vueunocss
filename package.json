@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.201",
+    "@unocss/preset-attributify": "^0.59.3",
     "@unocss/preset-uno": "^0.59.3",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
