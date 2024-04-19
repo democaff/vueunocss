@@ -1,5 +1,14 @@
+// 导入Vue及其相关库
 import { createApp } from "vue";
-
-import "virtual:uno.css";
+import { createPinia } from "pinia";
 import App from "./App.vue";
-createApp(App).mount("#app");
+import router from "./router";
+import "./style.css";
+// 导入样式
+import "virtual:uno.css";
+
+// 创建Pinia状态管理
+const pinia = createPinia();
+
+// 创建并挂载Vue应用
+createApp(App).use(router).use(pinia).mount("#app");

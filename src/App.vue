@@ -1,23 +1,13 @@
 <template>
-  <div class="mx-auto bg-slate-500 max-w-7xl">
-    <h1 class="text-4xl">App</h1>
-    <!-- 注意这里改为 :personList -->
-    <HelloWorld :a="message" :count="count" :personList="personList" />
+  <div  flex gap8 class="w-full h-fulls">
+    <Menu />
+    <router-view />
   </div>
 </template>
 
-<script setup>
-import { reactive, ref } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
-
-const message = ref("Hello, Vite!");
-const count = ref(0);
-
-const personList = reactive([
-  { name: "John", age: 30 },
-  { name: "Jane", age: 25 },
-  { name: "Susan", age: 35 },
-]);
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+import Menu from "./components/Menu.vue";
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
