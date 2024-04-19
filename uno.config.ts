@@ -1,19 +1,34 @@
-import { defineConfig } from "unocss";
-import presetAttributify from "@unocss/preset-attributify";
-import presetIcons from "@unocss/preset-icons";
-import presetUno from "@unocss/preset-uno";
+// uno.config.ts
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetTypography,
+  presetUno,
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup,
+} from "unocss";
 
 export default defineConfig({
+  shortcuts: [
+    // ...
+  ],
+  theme: {
+    colors: {
+      // ...
+    },
+  },
   presets: [
-    presetAttributify({
-      /* preset options */
-    }),
     presetUno(),
-    presetIcons({
-      extraProperties: {
-        display: "inline-block",
-        "vertical-align": "middle",
+    presetAttributify(),
+    presetIcons(),
+    presetTypography(),
+    presetWebFonts({
+      fonts: {
+        // ...
       },
     }),
   ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 });
